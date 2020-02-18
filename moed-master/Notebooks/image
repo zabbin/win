@@ -1,0 +1,7 @@
+%matplotlib inline
+
+from skimage.io import imread, imshow, imsave
+
+img = imread('tiger-color.png')
+
+imshow(img)
