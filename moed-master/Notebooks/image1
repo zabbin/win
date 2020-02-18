@@ -1,0 +1,12 @@
+from PIL import Image, ImageDraw
+try:
+    original = Image.open('grace.jpg')
+
+except FileNotFoundError:
+    print ('Файл не найден')
+   print('the size of the image is')
+    print(original.format,original.size,original.mode)
+    original.show()
+   img.show()
+    #image1 = Image.open('grace.jpg')
+   # image1.show()
