@@ -1,0 +1,17 @@
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+import numpy as np
+from moed.model import Model
+from moed.io import IO
+import struct 
+
+X = [x/1000 for x in range(1000)]
+with open("../data/v1x2.dat", "br") as f:
+    Y = list(struct.unpack('1000f', f.read()))
+    from collections import OrderedDict
+
+signal = Sequence.from_dict(OrderedDict(zip(X,Y)))
+signal.plot()
+x = IO.normalize(x)
+plt.show()
